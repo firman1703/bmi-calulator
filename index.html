@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>BMI Calculator</title>
   </head>
   <body>
-    <div class="container">
+    <div class="card">
       <h1>BMI Calculator</h1>
       <label for="weight">Weight (kg):</label>
       <input
@@ -24,8 +24,14 @@
         required
       /><br />
       <button onclick="calculateBMI()">Calculate BMI</button><br />
-      <h2>Your BMI: <span id="bmiResult"></span></h2>
-      <h2>Category: <span id="bmiCategory"></span></h2>
+      <h2>
+        Your BMI: <br />
+        <span id="bmiResult">result</span>
+      </h2>
+      <h2>
+        Category: <br />
+        <span id="bmiCategory">result</span>
+      </h2>
     </div>
     <script src="script.js"></script>
   </body>
